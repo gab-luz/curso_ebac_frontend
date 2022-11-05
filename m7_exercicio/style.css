@@ -1,0 +1,23 @@
+h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input{
+    display: block;
+    margin: 11px;
+}
+
+.success{
+    background-color: green;
+    color: white;
+    padding: 1px;
+    display: none;
+    margin: 10px;
+}
+.fail{
+    background-color: red;
+    color: white;
+    padding: 1px;
+    display: none;
+    margin: 10px;
+}
