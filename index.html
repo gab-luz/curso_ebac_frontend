@@ -1,17 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EBAC - Exercício HTML</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculadora de médias</title>
 </head>
 <body>
-    <form>
-        Nome <input type="text" name="nome" id=""> <br/>
-        E-mail <input type="email" name="email" id=""> <br/>
-        Senha <input type="password" name="senha" id=""> <br/>
-        <input type="button" value="Enviar">
-    </form>
+    <div class="container">
+        <header>
+            <img src="./images/logo.png" alt="capelo e diploma" srcset="">
+            <h1>Calculadora de médias</h1>
+        </header>
+        <form id="form-atividade">
+            <input type="text" required placeholder="Nome da atividade" id="nome-atividade">
+            <input type="number" placeholder="Nota da atividade" min="0" max="10" id="nota-atividade">
+            <input type="submit" value="Adicionar +" id="botao-submit">
+        </form>
+        <table cellspacing="0">
+            <thead>
+            <tr>
+                <th>Nome da atividade</th>
+                <th>Nota</th>
+                <th>Aprovado?</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Atividade 1</td>
+                <td>7</td>
+                <td><img src="./images/aprovado.png" alt="Emoji festejando" srcset=""></td>
+            </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Média final</td>
+                    <td id="media-final-valor">---</td>
+                    <td id="media-final-resultado"><span class="resultado aprovado">Aprovado</span></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>
