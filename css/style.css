@@ -1,0 +1,54 @@
+#container{
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+#container h1{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content:center;
+    align-self: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    max-width: 360px;
+    
+}
+.form-campo{
+    margin-bottom: 16px;
+}
+
+.form-campo label{
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input,
+.form-campo textarea{
+    width: 100%;
+    display: block;
+    padding: 8px;
+    
+}
+
+.form-campo textarea{
+    resize: none;
+    height: 120px;
+}
+
+.form-campo input[type=submit]{
+    color: black;
+    background-color: white;
+    width: 50%;
+    margin: 0 auto;
+}
+
